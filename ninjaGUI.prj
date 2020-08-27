@@ -3,7 +3,7 @@
     <param.appname>ninjaGUI</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>2.0</param.version>
+    <param.version>1.0</param.version>
     <param.authnamewatermark />
     <param.email />
     <param.company />
@@ -45,6 +45,7 @@
     <unset>
       <param.icon />
       <param.icons />
+      <param.version />
       <param.authnamewatermark />
       <param.email />
       <param.company />
