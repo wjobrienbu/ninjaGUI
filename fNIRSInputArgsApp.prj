@@ -1,17 +1,17 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
   <configuration file="C:\Users\walke\Documents\ninjaGUI\fNIRSInputArgsApp.prj" location="C:\Users\walke\Documents\ninjaGUI" name="fNIRSInputArgsApp" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>fNIRSInputArgsApp</param.appname>
+    <param.appname>NinjaNIRS_CFGUpdater</param.appname>
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
-    <param.authnamewatermark />
-    <param.email />
-    <param.company />
+    <param.authnamewatermark>Joe O'Brien</param.authnamewatermark>
+    <param.email>wjobrien@bu.edu</param.email>
+    <param.company>Boston University, Boas Research Lab</param.company>
     <param.summary />
     <param.description />
     <param.screenshot />
     <param.guid />
-    <param.installpath.string>\fNIRSInputArgsApp\</param.installpath.string>
+    <param.installpath.string>\Boston University, Boas Research Lab\NinjaNIRS_CFGUpdater\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
@@ -36,13 +36,16 @@
     <param.native.matlab>false</param.native.matlab>
     <param.checkbox>false</param.checkbox>
     <param.example />
-    <param.help.text />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
     <unset>
       <param.icon />
       <param.icons />
       <param.version />
-      <param.authnamewatermark />
-      <param.email />
       <param.company />
       <param.summary />
       <param.description />
@@ -73,17 +76,19 @@
       <param.native.matlab />
       <param.checkbox />
       <param.example />
-      <param.help.text />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\fNIRSInputArgsApp.mlapp</file>
     </fileset.main>
     <fileset.resources />
     <fileset.package />
-    <fileset.depfun />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\device_functions\loadCFG.m</file>
+      <file>${PROJECT_ROOT}\hwcompatlist.txt</file>
+    </fileset.depfun>
     <build-deliverables>
       <file location="${PROJECT_ROOT}\fNIRSInputArgsApp\for_testing" name="readme.txt" optional="true">C:\Users\walke\Documents\ninjaGUI\fNIRSInputArgsApp\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\fNIRSInputArgsApp\for_testing" name="fNIRSInputArgsApp.exe" optional="false">C:\Users\walke\Documents\ninjaGUI\fNIRSInputArgsApp\for_testing\fNIRSInputArgsApp.exe</file>
+      <file location="${PROJECT_ROOT}\fNIRSInputArgsApp\for_testing" name="NinjaNIRS_CFGUpdater.exe" optional="false">C:\Users\walke\Documents\ninjaGUI\fNIRSInputArgsApp\for_testing\NinjaNIRS_CFGUpdater.exe</file>
       <file location="${PROJECT_ROOT}\fNIRSInputArgsApp\for_testing" name="splash.png" optional="false">C:\Users\walke\Documents\ninjaGUI\fNIRSInputArgsApp\for_testing\splash.png</file>
     </build-deliverables>
     <workflow />
